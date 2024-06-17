@@ -1,0 +1,130 @@
+
+
+:root {
+    --rojo: #852;
+    --blanco: white;
+    --secundario: #0097a7;
+    --primario: #ffee00c9;
+    --fuente-principal: 2.5rem; 
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Merriweather", serif;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.boton  {
+    background-color: rgb(115, 115, 190);
+    color: aliceblue;
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 90%;
+    text-align: center;
+}
+
+@media (min-width: 768px){
+    .boton {
+        width: auto;
+    }
+}
+
+.nav {
+    background-color: var(--secundario);
+}
+
+.navegacion1 {
+   display: flex;   
+   justify-content: space-evenly;
+}
+
+@media (max-width: 768px){
+    .navegacion1{
+        align-items: center;
+        flex-direction: column;
+    }
+}
+@media (max-width: 480px){
+    .navegacion1{
+        flex-direction: column;
+    }
+}
+
+
+.navegacion1 a {
+   color: var(--blanco);
+   text-decoration: none;
+   font-size: 1.8rem;
+   font-weight: 700;
+   padding: 1rem;
+}
+
+.navegacion1 a:hover {
+    background-color: var(--primario);
+    color: black;
+}
+
+.hero {
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    position: relative;
+}
+
+.contenido-hero {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido-hero h2, 
+.contenido-hero p {
+    color: aliceblue;
+}
+
+.ubicacion {
+    display: flex;
+    align-items: flex-end;
+}
+
